@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>prayer api</title>
+  </head>
+  <body>
+    <div class="container p-2 flex flex-col items-center w-full b-red-600">
+      <div class="drop my-5 w-5/6 flex justify-center">
+        <select
+          id="mySelect"
+          onchange="selected()"
+          class="select select-warning w-full max-w-xs font-semibold capitalize"
+        >
+          <option class="font-semibold capitalize" disabled selected>
+            Pick a City
+          </option>
+          <option class="font-semibold capitalize">Riyadh</option>
+          <option class="font-semibold capitalize">jeddah</option>
+          <option class="font-semibold capitalize">mecca</option>
+        </select>
+      </div>
+      <div class="content flex flex-col gap-y-3">
+        <div class="item flex gap-2">
+          <div
+            class="imge shadow-lg bg-white w-28 rounded-sm h-10 flex items-center"
+          >
+            <img src="assets/cityscape.png" class="w-10 h-10 p-2" alt="" />
+            <p
+              id="city"
+              class="ml-2 capitalize font-medium md:text-base text-lg text-center"
+            >
+              Riyadh
+            </p>
+          </div>
+          <div
+            class="time shadow-lg bg-white w-28 rounded-sm h-10 flex items-center"
+          >
+            <p id="date" class="p-3 font-medium text-center">20/3/2002</p>
+          </div>
+        </div>
+        <div class="item flex gap-2">
+          <div
+            class="imge shadow-lg bg-white w-28 rounded-sm h-10 flex items-center"
+          >
+            <img src="assets/fajr.png" class="w-10 h-10 p-2" alt="" />
+            <p
+              class="ml-2 capitalize font-medium md:text-base text-lg text-center"
+            >
+              fajr
+            </p>
+          </div>
+          <div
+            class="time shadow-lg bg-white w-28 rounded-sm h-10 flex items-center"
+          >
+            <p id="fajr" class="p-8 font-medium text-center">3:00</p>
+          </div>
+        </div>
+        <div class="item flex gap-2">
+          <div
+            class="imge shadow-lg bg-white w-28 rounded-sm h-10 flex items-center"
+          >
+            <img src="assets/duhr.png" class="w-10 h-10 p-2" alt="" />
+            <p
+              class="ml-1 capitalize font-medium md:text-base text-lg text-center"
+            >
+              duhur
+            </p>
+          </div>
+          <div
+            class="time shadow-lg bg-white w-28 rounded-sm h-10 flex items-center"
+          >
+            <p id="duhur" class="p-8 font-medium text-center">3:00</p>
+          </div>
+        </div>
+        <div class="item flex gap-2">
+          <div
+            class="imge shadow-lg bg-white w-28 rounded-sm h-10 flex items-center"
+          >
+            <img src="assets/Aser.png" class="w-10 h-10 p-2" alt="" />
+            <p
+              class="ml-1 capitalize font-medium md:text-base text-lg text-center"
+            >
+              asar
+            </p>
+          </div>
+          <div
+            class="time shadow-lg bg-white w-28 rounded-sm h-10 flex items-center"
+          >
+            <p id="asar" class="p-8 font-medium text-center">3:00</p>
+          </div>
+        </div>
+        <div class="item flex gap-2">
+          <div
+            class="imge shadow-lg bg-white w-28 rounded-sm h-10 flex items-center"
+          >
+            <img src="assets/maghreb.png" class="w-10 h-10 p-2" alt="" />
+            <p
+              class="ml-1 capitalize font-medium md:text-base text-base text-center"
+            >
+              maghreb
+            </p>
+          </div>
+          <div
+            class="time shadow-lg bg-white w-28 rounded-sm h-10 flex items-center"
+          >
+            <p id="maghreb" class="p-8 font-medium text-center">3:00</p>
+          </div>
+        </div>
+        <div class="item flex gap-2">
+          <div
+            class="imge shadow-lg bg-white w-28 rounded-sm h-10 flex items-center"
+          >
+            <img src="assets/Ashia.png" class="w-10 h-10 p-2" alt="" />
+            <p
+              class="ml-1 capitalize font-medium md:text-base text-base text-center"
+            >
+              Ashia
+            </p>
+          </div>
+          <div
+            class="time shadow-lg bg-white w-28 rounded-sm h-10 flex items-center"
+          >
+            <p id="Ashia" class="p-8 font-medium text-center">3:00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+  <script src="../node_modules/axios/dist/axios.min.js"></script>
+  <script src="main.js"></script>
+</html>
